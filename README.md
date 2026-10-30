@@ -69,6 +69,20 @@ Claude Desktop connects to remote servers with headers through `mcp-remote` (`cl
 }
 ```
 
+### Cline (`cline_mcp_settings.json`)
+```json
+{
+  "mcpServers": {
+    "renewroster": {
+      "type": "streamableHttp",
+      "url": "https://app.renewroster.com/mcp",
+      "headers": { "Authorization": "Bearer rr_live_YOUR_KEY" }
+    }
+  }
+}
+```
+See [llms-install.md](llms-install.md) for agent-friendly setup steps.
+
 ### Windsurf (`~/.codeium/windsurf/mcp_config.json`)
 ```json
 {
