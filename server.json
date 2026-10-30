@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.renewroster/renewroster",
+  "title": "RenewRoster",
+  "description": "Track domain and SSL certificate expiry for your agency clients from any MCP client.",
+  "version": "1.0.1",
+  "websiteUrl": "https://renewroster.com/docs/mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.renewroster.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <your RenewRoster API key> (rr_live_..., create one in the API tab of your RenewRoster dashboard).",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/raghuchinnannan/renewroster-mcp",
+    "source": "github"
+  }
+}
